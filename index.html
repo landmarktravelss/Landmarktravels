@@ -224,17 +224,24 @@ footer {
   <h2>Book Your Trip</h2>
 
   <form>
-    <input type="text" placeholder="Full Name">
-    <input type="email" placeholder="Email">
-    <input type="tel" placeholder="Phone Number">
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Submit</button>
-  </form>
+  <input type="text" placeholder="Full Name" required>
+  <input type="email" placeholder="Email" required>
+  <input type="tel" placeholder="Phone Number" required>
+  <textarea placeholder="Your Message"></textarea>
 
-  <br>
-  <button onclick="window.open('https://payoneer.com','_blank')" style="margin-top:15px;">
-    Pay via Payoneer
+  <button type="button" onclick="window.open('https://payoneer.com','_blank')">
+    Pay Now
   </button>
+</form>
+
+<p style="text-align:center; margin-top:15px; font-size:14px;">
+  After completing the payment, please send the payment screenshot to our WhatsApp customer support.
+</p>
+
+<button onclick="window.open('https://wa.me/XXXXXXXXXXX','_blank')" 
+style="margin-top:10px; background:#25D366; color:white; padding:12px 20px; border:none; border-radius:30px; cursor:pointer;">
+  WhatsApp Customer Support
+</button>
 </section>
 
 <footer>
