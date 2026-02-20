@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book your luxury Landmark Travels itinerary with concierge-confirmed arrangements." />
+  <title>Book | Landmark Travels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="whatsapp-float">
+    <a href="https://wa.me/13654158558" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <header class="glass-nav">
+    <div class="logo">Landmark Travels</div>
+    <input type="checkbox" id="nav-toggle-book" />
+    <label for="nav-toggle-book" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="packages.html">Packages</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="book.html" class="active btn-link">Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-short" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80');">
+      <div class="overlay">
+        <p class="badge">Reserve Your Departure</p>
+        <h1>Luxury bookings backed by concierge verification.</h1>
+      </div>
+    </section>
+
+    <section class="booking">
+      <form class="booking-form fade-in" action="https://formspree.io/f/xreaqwpj" method="POST">
+        <input type="hidden" name="_subject" value="New Booking Request - Landmark Travels" />
+        <label>
+          Full Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email Address
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Phone Number
+          <input type="tel" name="phone" required />
+        </label>
+        <label>
+          Travel Dates
+          <input type="date" name="start-date" required />
+        </label>
+        <label>
+          Return Date
+          <input type="date" name="end-date" required />
+        </label>
+        <label>
+          Number of Travelers
+          <input type="number" name="travelers" min="1" value="2" required />
+        </label>
+        <label>
+          Select Tour
+          <select name="tour-choice" id="tour-dropdown" required>
+            <option value="">Select a tour</option>
+            <option value="Japan: Tokyo & Beyond">Japan: Tokyo & Beyond</option>
+            <option value="Italy: Rome, Amalfi Coast & Sicily">Italy: Rome, Amalfi Coast & Sicily</option>
+            <option value="Journey to Jordan">Journey to Jordan</option>
+            <option value="The Greek Islands">The Greek Islands</option>
+          </select>
+        </label>
+        <label>
+          Additional Notes
+          <textarea name="notes" rows="3"></textarea>
+        </label>
+        <div class="form-message" aria-live="polite"></div>
+        <button class="btn primary" type="submit">Submit Booking Request</button>
+      </form>
+      <aside class="booking-summary fade-in">
+        <h3>Luxury Transport</h3>
+        <ul>
+          <li>Private car transfers & elite chauffeur service</li>
+          <li>First-class rail or private jet charters per itinerary</li>
+          <li>Yacht transfers in Greek islands & helicopter options available</li>
+        </ul>
+        <h3>Concierge</h3>
+        <p>24/7 concierge line, private guides, and exclusive partner experiences.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h4>Landmark Travels</h4>
+      <p>luxetravel@agency.com</p>
+      <p>+1 (365) 415-8558</p>
+    </div>
+    <div class="social-links">
+      <p><a href="https://www.instagram.com/landmark_travelss?igsh=MXNwZ243NDlrOG90dA==" target="_blank" rel="noreferrer">Instagram</a></p>
+      <p><a href="https://www.facebook.com/share/1F8d6spX2e/" target="_blank" rel="noreferrer">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
